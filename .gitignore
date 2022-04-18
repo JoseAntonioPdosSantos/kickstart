@@ -4,6 +4,7 @@
 /database/docker/content
 **/yarn.lock
 **/package-lock.json
+ethereum/build/
 
 
 # Logs
