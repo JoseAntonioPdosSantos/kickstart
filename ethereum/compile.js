@@ -28,7 +28,6 @@ const inputJson = JSON.stringify(input);
 const compileFile = solc.compile(inputJson);
 const contracts = JSON.parse(compileFile);
 
-console.log(contracts.contracts.ethereum);
 fs.ensureDirSync(buildPath);
 
 try {
