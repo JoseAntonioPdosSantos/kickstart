@@ -22,6 +22,15 @@ beforeEach(async () => {
         from: accounts[0],
         gas: '1000000'
     });
+
+    await factory.methods
+        .createCampaign('100')
+        .send({
+            from: accounts[0],
+            gas: '1000000'
+        });
+
+    [campaignAddress] = await factorys.method.getDeployedCampaigns().call();
 });
 
 
